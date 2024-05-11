@@ -12,6 +12,9 @@ function App() {
       <Navbar />
       <br/>
       <br/>
+      
+      <br/>
+      <br/>
       <br/>
 
       <Home />
@@ -19,6 +22,9 @@ function App() {
       <About />
       
       <Skills />
+      <br/>
+      <br/>
+
     
 
       <Work />
