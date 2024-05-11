@@ -20,6 +20,9 @@ function App() {
       <Home />
       
       <About />
+      <br/>
+      <br/>
+      <br/>
       
       <Skills />
       <br/>
