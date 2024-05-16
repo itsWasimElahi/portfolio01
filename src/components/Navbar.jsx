@@ -542,7 +542,7 @@ const Navbar = () => {
         {/* Social icons in mobile menu */}
         <div className="flex justify-center mt-8">
           <a
-            href="https://www.linkedin.com/in/m-waseem-elahi/"
+            href="https://www.linkedin.com/in/m-waseem-elahi/  "
             className="mr-4"
           >
             <FaLinkedin size={30} />
