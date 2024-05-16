@@ -154,7 +154,7 @@ const Work = () => {
                             }}
                         >
                             {/* Hover effect for images */}
-                            <div className="opacity-0 group-hover:opacity-100">
+                            <div className="opacity-0 group-hover:opacity-100 ">
                                 <span className="text-2xl font-bold text-white tracking-wider">{item.name}</span>
                                 <div className="pt-8 text-center">
                                     <a href={item.github} target="_blank" rel="noopener noreferrer">

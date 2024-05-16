@@ -100,10 +100,11 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <img src={profileImage} alt="Waseem Elahi" className="rounded-full w-64 h-64 object-cover shadow-md mt-8 sm:mt-0" />
+        <img src={profileImage} alt="Waseem Elahi" className="rounded-full w-64 h-64 object-cover shadow-md mt-8 transition-transform duration-300 transform hover:scale-110 sm:mt-0" />
       </div>
     </div>
   );
 };
 
 export default Home;
+

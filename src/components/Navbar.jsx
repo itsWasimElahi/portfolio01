@@ -29,7 +29,7 @@
 //       {/* menu */}
 //       {/*start ma bus big screen pr yehi menu show hoga kun k baki sb cheezain hidden hui hongi navbar se */}
 //       <ul className="hidden md:flex">
-        
+
 //         {/* Anything above medium size screen so show menu */}
 //         <li>
 //           <Link to="home" smooth={true} duration={500}>
@@ -145,9 +145,6 @@
 // };
 
 // export default Navbar;
-
-
-
 
 // import React, { useState } from 'react';
 // import {
@@ -310,10 +307,6 @@
 
 // export default Navbar;
 
-
-
-
-
 // import React, { useState } from 'react';
 // import {
 //   FaBars,
@@ -454,9 +447,7 @@
 
 // export default Navbar;
 
-
-
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   FaBars,
   FaTimes,
@@ -464,53 +455,53 @@ import {
   FaLinkedin,
   FaFacebook,
   FaLinkedinIn,
-} from 'react-icons/fa';
-import { HiOutlineMail } from 'react-icons/hi';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import Plogo from '../assets/Plogo.jpg';
-import { Link } from 'react-scroll';
+} from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import Plogo from "../assets/Plogo.jpg";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
       <div>
-        <img src={Plogo} alt='Logo Image' style={{ width: '50px' }} />
+        <img src={Plogo} alt="Logo Image" style={{ width: "50px" }} />
       </div>
 
       {/* menu */}
-      <ul className='hidden md:flex'>
+      <ul className="hidden md:flex">
         <li>
-          <Link to='home' smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to='about' smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li>
-          <Link to='skills' smooth={true} duration={500}>
+          <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
         <li>
-          <Link to='work' smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li>
-          <Link to='contact' smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
       </ul>
 
       {/* Hamburger */}
-      <div onClick={handleClick} className='md:hidden z-10'>
+      <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -518,83 +509,90 @@ const Navbar = () => {
       <ul
         className={
           !nav
-            ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+
+        <li className="py-6 text-4xl">
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
         {/* Social icons in mobile menu */}
-        <div className='flex justify-center mt-8'>
-          <a href='https://www.linkedin.com/in/m-waseem-elahi/' className='mr-4'>
+        <div className="flex justify-center mt-8">
+          <a
+            href="https://www.linkedin.com/in/m-waseem-elahi/"
+            className="mr-4"
+          >
             <FaLinkedin size={30} />
           </a>
-          <a href='https://github.com/itsWasimElahi' className='mr-4'>
+          <a href="https://github.com/itsWasimElahi" className="mr-4">
             <FaGithub size={30} />
           </a>
-          <a href='https://phenomenal-lily-c656cc.netlify.app/' className='mr-4'>
+          <a
+            href="https://phenomenal-lily-c656cc.netlify.app/"
+            className="mr-4"
+          >
             <HiOutlineMail size={30} />
           </a>
-          <a href='https://drive.google.com/file/d/190odi0oMV2JJYfxzneRYDPWkH55UYN0n/view?usp=sharing'>
+          <a href="https://drive.google.com/file/d/190odi0oMV2JJYfxzneRYDPWkH55UYN0n/view?usp=sharing">
             <BsFillPersonLinesFill size={30} />
           </a>
         </div>
       </ul>
 
       {/* Social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://www.linkedin.com/in/m-waseem-elahi/'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://www.linkedin.com/in/m-waseem-elahi/"
             >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://github.com/itsWasimElahi'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://github.com/itsWasimElahi"
             >
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://phenomenal-lily-c656cc.netlify.app/'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://phenomenal-lily-c656cc.netlify.app/"
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
-              className='flex justify-between items-center w-full text-gray-300'
-              href='https://drive.google.com/file/d/190odi0oMV2JJYfxzneRYDPWkH55UYN0n/view?usp=sharing'
+              className="flex justify-between items-center w-full text-gray-300"
+              href="https://drive.google.com/file/d/190odi0oMV2JJYfxzneRYDPWkH55UYN0n/view?usp=sharing"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
@@ -606,5 +604,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
