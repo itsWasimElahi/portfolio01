@@ -104,8 +104,11 @@ import GitHub from '../assets/github.png';
 import Tailwind from '../assets/tailwind.png';
 import Mongo from '../assets/mongo.png';
 import sql from '../assets/sql.png';
-import java from '../assets/java.webp';
-import Cplus from '../assets/Cplus.jpg';
+import bootstrap from '../assets/bootstrap.png';
+import java1 from '../assets/java1.webp';
+
+// import Cplus from '../assets/Cplus.jpg';
+import cpp1 from '../assets/cpp1.png';
 import wordpress from '../assets/wordpress.png';
 
 const Skills = () => {
@@ -128,9 +131,11 @@ const Skills = () => {
           <SkillItem img={Tailwind} label='Tailwind' />
           <SkillItem img={FireBase} label='Firebase' />
           <SkillItem img={wordpress} label='WordPress' />
+          <SkillItem img={cpp1} label='C++' />
+          <SkillItem img={bootstrap} label='Bootstrap' />
+
           <SkillItem img={sql} label='SQL' />
-          <SkillItem img={java} label='JAVA' />
-          <SkillItem img={Cplus} label='C++' />
+          <SkillItem img={java1} label='JAVA' />
         </div>
       </div>
     </div>
