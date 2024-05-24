@@ -4,6 +4,7 @@ import Biotrust from '../assets/projects/Biotrust.jpg'
 import loopstudio from '../assets/projects/loopstudio.jpg'
 import blogging from '../assets/projects/blogging.png'
 import password from '../assets/projects/password.jpg'
+import moviesList from '../assets/projects/moviesList.png'
 
 export const data=[
     {
@@ -13,6 +14,15 @@ export const data=[
         github:"https://github.com/itsWasimElahi/Expense-Tracker-App",
         live:"https://sensational-liger-bb3ea5.netlify.app/",
     },
+   
+    {
+        id:7,
+        name:"React & Firebase App",
+        image:moviesList,
+        github:"https://github.com/itsWasimElahi/React-Firebase-01",
+        live:"https://react-firebase-moviescollector-04b2ca.netlify.app/",
+    },
+   
     {
         id:2,
         name:"Biotrust App",
